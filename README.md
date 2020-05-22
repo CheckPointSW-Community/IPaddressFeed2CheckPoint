@@ -1,5 +1,5 @@
 # IPaddressFeed2CheckPointAPI
-Adding a IP Address feed (CIDR) into Checkpoint Objects (here Office 365)
+Adding an IP Address feed (CIDR) into Checkpoint Objects (here Office 365)
 
 How to use:
 
@@ -7,15 +7,20 @@ How to use:
 
     Example: 
     mkdir -p /var/scripts/o365
+
     copy o365-address_update.sh to above directory
+
 
 2. Edit the o365-address_update.sh script to define variables for your enviroment
 
     a. Directory under “v_spath”
+
         Example: 
         v_spath=/var/scripts/o365
 
+
     b. Edit the script by uncommenting your Check Point Management Server version
+
 
         Example: 
         #If this machine version R80.40, uncomment the line below
@@ -47,10 +52,11 @@ How to use:
         #Login Password
         v_cpuserpw=changeme
 
-3. Add to cron job
+3. Cron job to check updates to ip address list
 
     In GAiA Web UI just add Job Schedule for this
-    example:
+    
+    Example:
     sh /var/scripts/o365/o365-address_update.sh | /usr/bin/tee -a /var/scripts/o365/o365_logging 2>&1 | /usr/sbin/sendmail --domain=(mail domain) -f (sender address) -v (recipient address) --host= (mail relay) 2>&1
 
     Adds logging entries to a file "o365_logging" and sending a mail with the content
@@ -58,8 +64,8 @@ How to use:
 
 4. Adapting to other feeds
 
-    Script can be used for any other feed, where network addresses are in CIDR format. As the script already does a diff between existing objects and those downloaded, the full list should be used. Objects are automatically removed from group and from Check Point Management Server, when they are not part of the feed.
+    The script can be used for any other feeds, where network addresses are in CIDR format. As the script already does a diff between existing objects and those downloaded, the full list should be used. Objects are automatically removed from the group and from Check Point Management Server when they are not part of the feed.
 
-5. Feeds: 
+5. Feeds
 
-Office 365 URLs and IP address ranges - https://endpoints.office.com/endpoints/worldwide?noipv6&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7
+    Office 365 URLs and IP address ranges - https://endpoints.office.com/endpoints/worldwide?noipv6&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7

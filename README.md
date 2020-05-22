@@ -1,5 +1,3 @@
-Originally cloned from the API project written by leinadred (https://github.com/leinadred/IPaddressFeed2CheckPointAPI).
-
 # IPaddressFeed2CheckPointAPI
 Adding an IP Address feed (CIDR) into Checkpoint Objects (here Office 365)
 
@@ -71,3 +69,6 @@ How to use:
 5. Feeds
 
     Office 365 URLs and IP address ranges - https://endpoints.office.com/endpoints/worldwide?noipv6&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7
+
+
+Originally cloned from the API project written by leinadred (https://github.com/leinadred/IPaddressFeed2CheckPointAPI).

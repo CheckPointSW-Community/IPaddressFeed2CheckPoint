@@ -68,7 +68,10 @@ How to use:
 
 5. Feeds
 
-    Office 365 URLs and IP address ranges - https://endpoints.office.com/endpoints/worldwide?noipv6&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7
+    [Office 365 URLs and IP address range](https://endpoints.office.com/endpoints/worldwide?noipv6&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
+6. Additional Information
 
-Originally cloned from the API project written by leinadred (https://github.com/leinadred/IPaddressFeed2CheckPointAPI).
+    [This script is referenced in Check Point SK167000](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+
+    [Originally cloned from the API project written by leinadred](https://github.com/leinadred/IPaddressFeed2CheckPointAPI)

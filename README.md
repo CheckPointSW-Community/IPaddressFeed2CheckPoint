@@ -1,3 +1,5 @@
+Originally cloned from the API project written by leinadred (https://github.com/leinadred/IPaddressFeed2CheckPointAPI).
+
 # IPaddressFeed2CheckPointAPI
 Adding an IP Address feed (CIDR) into Checkpoint Objects (here Office 365)
 
